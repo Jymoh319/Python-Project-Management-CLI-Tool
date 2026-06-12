@@ -25,17 +25,17 @@ pipenv run python main.py add-user --name "kamwaro" --email "james@gmail.com"
 ## Bind a New Project:
 
 ```Bash
-pipenv run python main.py add-project --title "API Gateway" --user "kamwaro" --due "2026-11-20"
+pipenv run python main.py add-project --title "Backend momo" --user "kamwaro" --due "2026-9-7"
 ```
 
 ## Inject a Dependent Task:
 
 ```Bash
-pipenv run python main.py add-task --project "API Gateway" --title "Configure CORS Policies" --assignee "kamwaro"
+pipenv run python main.py add-task --project "Backend momo" --title "Configure Policies" --assignee "kamwaro"
 ```
 
 ## Flag a Task as Complete:
-
+***N/B: --id "put number here"***
 ```Bash
 pipenv run python main.py complete-task --id "1"
 ```

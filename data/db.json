@@ -11,17 +11,17 @@
   },
   "projects": {
     "API Gateway": {
-      "title": "API Gateway",
+      "title": "Backend momo",
       "description": "No description provided.",
-      "due_date": "2026-11-20",
+      "due_date": "2026-9-7",
       "owner_name": "kamwaro"
     }
   },
   "tasks": {
     "1": {
       "task_id": "1",
-      "project_title": "API Gateway",
-      "title": "Configure CORS Policies",
+      "project_title": "Backend momo",
+      "title": "Configure Policies",
       "status": "Complete",
       "assigned_to": "kamwaro"
     }

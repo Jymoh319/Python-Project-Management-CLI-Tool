@@ -13,7 +13,7 @@ from rich.table import Table
 console = Console()
 
 def run_cli():
-    parser = argparse.ArgumentParser(description=" Multi-User Project Tracker CLI Suite")
+    parser = argparse.ArgumentParser(description="Python Project Management CLI Tool")
     subparsers = parser.add_subparsers(dest="command", help="Operational Subcommands")
 
     # --- SUBCOMMAND: add-user ---
@@ -57,7 +57,7 @@ def run_cli():
             sys.exit(1)
         db["users"][args.name] = User(args.name, args.email)
         save_database(db)
-        console.print(f"[bold green]✔ Success:[/bold green] Account created for {args.name}.")
+        console.print(f"[bold green]Success:[/bold green] Account created for {args.name}.")
 
     elif args.command == "list-users":
         if not db["users"]:
@@ -79,7 +79,7 @@ def run_cli():
             sys.exit(1)
         db["projects"][args.title] = Project(args.title, args.desc, args.due, args.user)
         save_database(db)
-        console.print(f"[bold green]✔ Success:[/bold green] Project '{args.title}' bound to user '{args.user}'.")
+        console.print(f"[bold green]Success:[/bold green] Project '{args.title}' bound to user '{args.user}'.")
 
     elif args.command == "list-projects":
         target_projects = db["projects"].values()
@@ -90,10 +90,10 @@ def run_cli():
             console.print("[yellow]No project allocations found matching request boundaries.[/yellow]")
             return
             
-        table = Table(title="Project Matrix Board")
-        table.add_column("Task Name", style="green")
+        table = Table(title="Project Board")
+        table.add_column("Task Name", style="red")
         table.add_column("Completion Date", style="bold white")
-        table.add_column("Responsible User", style="blue")
+        table.add_column("Responsible User", style="yellow")
         for p in target_projects:
             table.add_row(p.title, p.due_date, p.owner_name)
         console.print(table)
