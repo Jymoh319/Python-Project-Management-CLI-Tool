@@ -19,7 +19,7 @@ pipenv run pytest
 # Command Execution Examples
 ## Register a New User:
 ```Bash
-pipenv run python main.py add-user --name "karanja" --email "james@gmail.com"
+pipenv run python main.py add-user --name "kamwaro" --email "james@gmail.com"
 ```
 
 ## Bind a New Project:
@@ -31,7 +31,7 @@ pipenv run python main.py add-project --title "API Gateway" --user "kamwaro" --d
 ## Inject a Dependent Task:
 
 ```Bash
-pipenv run python main.py add-task --project "API Gateway" --title "Configure CORS Policies" --assignee "Alice"
+pipenv run python main.py add-task --project "API Gateway" --title "Configure CORS Policies" --assignee "kamwaro"
 ```
 
 ## Flag a Task as Complete:

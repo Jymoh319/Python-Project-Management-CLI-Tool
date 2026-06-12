@@ -1,8 +1,12 @@
 {
   "users": {
-    "Alice": {
-      "name": "Alice",
-      "email": "alice@dev.com"
+    "karanja": {
+      "name": "karanja",
+      "email": "james@gmail.com"
+    },
+    "kamwaro": {
+      "name": "kamwaro",
+      "email": "james@gmail.com"
     }
   },
   "projects": {
@@ -10,7 +14,7 @@
       "title": "API Gateway",
       "description": "No description provided.",
       "due_date": "2026-11-20",
-      "owner_name": "Alice"
+      "owner_name": "kamwaro"
     }
   },
   "tasks": {
@@ -19,7 +23,7 @@
       "project_title": "API Gateway",
       "title": "Configure CORS Policies",
       "status": "Complete",
-      "assigned_to": "Alice"
+      "assigned_to": "kamwaro"
     }
   }
 }

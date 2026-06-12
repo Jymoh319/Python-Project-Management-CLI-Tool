@@ -13,7 +13,7 @@ from rich.table import Table
 console = Console()
 
 def run_cli():
-    parser = argparse.ArgumentParser(description="🚀 Multi-User Project Tracker CLI Suite")
+    parser = argparse.ArgumentParser(description=" Multi-User Project Tracker CLI Suite")
     subparsers = parser.add_subparsers(dest="command", help="Operational Subcommands")
 
     # --- SUBCOMMAND: add-user ---
@@ -91,9 +91,9 @@ def run_cli():
             return
             
         table = Table(title="Project Matrix Board")
-        table.add_column("Project Scope Title", style="green")
-        table.add_column("Target Milestone", style="bold white")
-        table.add_column("Owner Username", style="blue")
+        table.add_column("Task Name", style="green")
+        table.add_column("Completion Date", style="bold white")
+        table.add_column("Responsible User", style="blue")
         for p in target_projects:
             table.add_row(p.title, p.due_date, p.owner_name)
         console.print(table)
