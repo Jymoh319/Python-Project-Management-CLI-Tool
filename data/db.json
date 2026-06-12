@@ -1,0 +1,25 @@
+{
+  "users": {
+    "Alice": {
+      "name": "Alice",
+      "email": "alice@dev.com"
+    }
+  },
+  "projects": {
+    "API Gateway": {
+      "title": "API Gateway",
+      "description": "No description provided.",
+      "due_date": "2026-11-20",
+      "owner_name": "Alice"
+    }
+  },
+  "tasks": {
+    "1": {
+      "task_id": "1",
+      "project_title": "API Gateway",
+      "title": "Configure CORS Policies",
+      "status": "Complete",
+      "assigned_to": "Alice"
+    }
+  }
+}
